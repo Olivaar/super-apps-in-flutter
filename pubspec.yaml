@@ -1,0 +1,10 @@
+name: super_apps_in_flutter
+publish_to: 'none'
+
+environment:
+  sdk: ^3.6.2
+  flutter: '>=3.0.0'
+
+dev_dependencies:
+  melos: ^7.3.0
+

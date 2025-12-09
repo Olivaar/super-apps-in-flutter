@@ -1,0 +1,34 @@
+name: super_apps_in_flutter # Nome do workspace
+repository: https://github.com/Olivaar/super-apps-in-flutter.git
+
+packages:
+  - apps/**
+  - packages/**
+
+ide:
+  intellij:
+    enabled: true
+  android-studio:
+    enabled: true
+
+
+scripts:
+  bootstrap:
+    run: melos bootstrap
+    description: Instala todas as dependências e linka pacotes locais.
+
+  clean:
+    run: melos exec -- flutter clean
+    description: Limpa builds em todos os pacotes.
+
+  test:
+    run: melos exec --dir-exists="test" -- flutter test
+    description: Roda testes em todos os pacotes.
+
+  analyze:
+    run: melos exec -- flutter analyze
+    description: Analisa código de todos os pacotes.
+
+  build_runner:
+    run: melos exec --depends-on="build_runner" -- flutter pub run build_runner build --delete-conflicting-outputs
+    description: Roda build_runner apenas nos pacotes que precisam.

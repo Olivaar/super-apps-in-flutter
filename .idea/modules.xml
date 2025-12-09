@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/super-apps-in-flutter.iml" filepath="$PROJECT_DIR$/.idea/super-apps-in-flutter.iml" />
+<module fileurl="file://$PROJECT_DIR$/melos_super_apps_in_flutter.iml" filepath="$PROJECT_DIR$/melos_super_apps_in_flutter.iml"/>
+<module fileurl="file://$PROJECT_DIR$/.idea/super-apps-in-flutter.iml" filepath="$PROJECT_DIR$/.idea/super-apps-in-flutter.iml"/>
     </modules>
   </component>
 </project>
